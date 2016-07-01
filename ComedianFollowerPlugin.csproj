@@ -83,7 +83,7 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y "$(TargetPath)" "$(SolutionDir)MultiDesktop\$(OutDir)"
 xcopy /I /Y "$(ProjectDir)AIML\Comedian" "$(SolutionDir)MultiDesktop\$(OutDir)comedian"
-xcopy /Y "$(ProjectDir)AIML\config\ComedianSettings.xml" "$(SolutionDir)MultiDesktop\$(OutDir)config\ComedianSettings.xml"</PostBuildEvent>
+xcopy /Y "$(ProjectDir)AIML\config\ComedianSettings.xml" "$(SolutionDir)MultiDesktop\$(OutDir)config"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
