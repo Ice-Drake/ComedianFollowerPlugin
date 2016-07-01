@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ED28513-9EC9-408D-8D5E-B8D57FEAC30B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComedianFollowerPlugin</RootNamespace>
+    <AssemblyName>ComedianFollowerPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIMLbot">
+      <HintPath>.\AIMLbot.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvailableState.cs" />
+    <Compile Include="BotState.cs" />
+    <Compile Include="BusyState.cs" />
+    <Compile Include="Comedian.cs" />
+    <Compile Include="FlyweightStateFactory.cs" />
+    <Compile Include="GreetingState.cs" />
+    <Compile Include="InitiateState.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestState.cs" />
+    <Compile Include="SleepState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AIML\config\DefaultPredicates.xml" />
+    <Content Include="AIML\config\GenderSubstitutions.xml" />
+    <Content Include="AIML\config\Person2Substitutions.xml" />
+    <Content Include="AIML\config\PersonSubstitutions.xml" />
+    <Content Include="AIML\config\ComedianSettings.xml" />
+    <Content Include="AIML\config\Splitters.xml" />
+    <Content Include="AIML\config\Substitutions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AIML\Comedian\Bot.aiml" />
+    <None Include="AIML\Comedian\Chitchat.aiml" />
+    <None Include="AIML\Comedian\Condition.aiml" />
+    <None Include="AIML\Comedian\Knowledge.aiml" />
+    <None Include="AIML\Comedian\Salutations.aiml" />
+    <None Include="AIML\Comedian\Translation.aiml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginSDK\PluginSDK.csproj">
+      <Project>{67161f85-556e-4def-9899-6464bdc55773}</Project>
+      <Name>PluginSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetPath)" "$(SolutionDir)MultiDesktop\$(OutDir)"
+xcopy /I /Y "$(ProjectDir)AIML\Comedian" "$(SolutionDir)MultiDesktop\$(OutDir)comedian"
+xcopy /Y "$(ProjectDir)AIML\config\ComedianSettings.xml" "$(SolutionDir)MultiDesktop\$(OutDir)config\ComedianSettings.xml"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

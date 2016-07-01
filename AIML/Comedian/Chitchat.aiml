@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+  <!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+  <!-- This program is open source code released under -->
+  <!-- the terms of the GNU General Public License     -->
+  <!-- as published by the Free Software Foundation.   -->
+  <!-- Complies with AIML 1.01 Tag Set Specification -->
+  <!-- as adopted by the ALICE A.I. Foundation.  -->
+  <!-- Annotated Version updated September 2003 -->
+
+<category><pattern>SAYSTATEMENT *</pattern><template><star /></template></category>
+<category><pattern>SAYSTATEMENTPATTERN *</pattern><template><srai><star /></srai></template></category>
+<category><pattern>SAYQUESTION *</pattern><template><star />?</template></category>
+<category><pattern>SAYQUESTIONPATTERN *</pattern><template><srai><star />?</srai></template></category>
+<category><pattern><srai>HELLO</srai></pattern><that>HELLO</that><template><random><li>How are you?</li><li>What are you doing?</li></random></template></category>
+<category><pattern><srai>HELLO</srai></pattern><that>HI</that><template><random><li>How are you?</li><li>What are you doing?</li></random></template></category>
+</aiml>

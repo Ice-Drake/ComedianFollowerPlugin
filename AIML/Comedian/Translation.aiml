@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+  <!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+  <!-- This program is open source code released under -->
+  <!-- the terms of the GNU General Public License     -->
+  <!-- as published by the Free Software Foundation.   -->
+  <!-- Complies with AIML 1.01 Tag Set Specification -->
+  <!-- as adopted by the ALICE A.I. Foundation.  -->
+  <!-- Annotated Version updated September 2003 -->
+
+<topic name="translation">
+<category><pattern>HUH</pattern><that>你好</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>您好</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>再見</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>再會</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>拜拜</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>今日は</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>こんにちは</that><template><srai>WHAT</srai></template></category>
+<category><pattern>HUH</pattern><that>さようなら</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT</pattern><that>你好</that><template>Oh, I just said 'Hi' in Chinese.</template></category>
+<category><pattern>WHAT</pattern><that>您好</that><template>Oh, I just said 'Hi' politely in Chinese.</template></category>
+<category><pattern>WHAT</pattern><that>再見</that><template>Oh, I just said 'See You Again' in Chinese.</template></category>
+<category><pattern>WHAT</pattern><that>再會</that><template>Oh, I just said 'Meet Again' in Chinese.</template></category>
+<category><pattern>WHAT</pattern><that>拜拜</that><template>Oh, I just said 'Bye Bye' in Chinese.</template></category>
+<category><pattern>WHAT</pattern><that>今日は</that><template>Oh, I just said 'Hi' in Japanese.</template></category>
+<category><pattern>WHAT</pattern><that>こんにちは</that><template>Oh, I just said 'Hi' in Japanese.</template></category>
+<category><pattern>WHAT</pattern><that>さようなら</that><template>Oh, I just said 'Bye' in Japanese.</template></category>
+<category><pattern>WHAT *</pattern><that>你好</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>您好</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>再見</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>再會</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>拜拜</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>今日は</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>こんにちは</that><template><srai>WHAT</srai></template></category>
+<category><pattern>WHAT *</pattern><that>さようなら</that><template><srai>WHAT</srai></template></category>  
+</topic>
+
+</aiml>

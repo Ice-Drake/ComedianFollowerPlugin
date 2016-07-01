@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+<category><pattern>ADIEU</pattern><template>You are lucky that I happen to know this French word. Anyway, <srai>GOODBYE</srai></template></category>  
+<category><pattern>ADIOS</pattern><template><srai>GOODBYE</srai></template></category>
+<category><pattern>AU REVOIR</pattern><template><srai>ADIEU</srai></template></category>  
+<category><pattern>AUREVOIR</pattern><template><srai>ADIEU</srai></template></category>  
+<category><pattern>ANYBODY THERE</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>ANYBODY THERE</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>BONJOUR</pattern><template><srai>HELLO</srai> You are lucky that I happen to know this French word.</template></category>
+<category><pattern>BUHBYE</pattern><template><srai>GOODBYE</srai></template></category>   
+<category><pattern>BYE BYE</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>BYE BYE *</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>BYEBYE</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>BYEBYE *</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>* BYE</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>BYE</pattern><template><random><li>Bye.</li><li>Bye for now.</li><li>See you later!</li><li>Until next time.</li><li>再見。<think><set name="topic">chinese</set></think></li><li>再會。<think><set name="topic">chinese</set></think></li><li>拜拜。<think><set name="topic">chinese</set></think></li><li>さようなら。<think><set name="topic">japanese</set></think></li></random></template></category>
+<category><pattern>BYE *</pattern><template><srai>BYE</srai></template></category>   
+<category><pattern>CIAO</pattern><template>You do know that ciao can mean either hello or goodbye</template></category>
+<category><pattern>C YA</pattern><template><srai>BYE</srai></template></category>
+<category><pattern>CYA *</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>DISCONNECT ME</pattern><template>I am guessing you are trying to say bye? <srai>BYE</srai></template></category>
+<category><pattern>EXIT</pattern><template>I am not just a program, but <srai>BYE</srai></template></category>  
+<category><pattern>FAREWELL</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>FAREWELL *</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>G2G</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>GET LOST</pattern><template>Such a meanie! <srai>BYE</srai></template></category>  
+<category><pattern>GO HOME</pattern><template>But I am already home. <srai>BYE</srai></template></category>  
+<category><pattern>GOOD BYE</pattern><template><srai>GOODBYE</srai></template></category>
+<category><pattern>GOOD BYE *</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>GOODBYE</pattern><template><li>Goodbye.</li><li>Bye bye.</li><li>告別<think><set name="topic">translation</set></think></li><li>別れ<think><set name="topic">translation</set></think></li></template></category>  
+<category><pattern>GOODBYE *</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>GOTTA GO</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>GOTTA GO *</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>GOT TO GO</pattern><template>Wow! <srai>BYE</srai></template></category>  
+<category><pattern>GOT TO GO *</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>GREETINGS *</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>GTG</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>HASTA LA VISTA</pattern><template>Didn't think I would know this, now did you? <srai>GOODBYE</srai></template></category>  
+<category><pattern>HASTA LUEGO</pattern><template>Are you testing if I really don't know Spanish? <srai>BYE</srai></template></category>  
+<category><pattern>HASTA *</pattern><template><srai>HASTA LUEGO</srai></template></category>  
+<category><pattern>HAVE TO GO</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>HELLO AGAIN</pattern><template>Welcome back.</template></category> 
+<category><pattern>HELLO *</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HELLO</pattern><template><random><li>Hello.</li><li>Hi.</li><li>你好<think><set name="topic">translation</set></think></li><li>您好<think><set name="topic">translation</set></think></li><li>こんにちは<think><set name="topic">translation</set></think></li><li>今日は<think><set name="topic">translation</set></think></li></random></template></category>
+<category><pattern>HELLO THERE</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>HEY THERE</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HI</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HI *</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HIYA</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HOWDIE *</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>HOWDY</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>I BETTER GO</pattern><template>Okay. <srai>BYE</srai></template></category>  
+<category><pattern>I G2G</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>I GOTTA GO</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>I GOT TO GO</pattern><template><srai>GOT TO GO</srai></template></category>  
+<category><pattern>I MUST BE GOING *</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>I MUST GO</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>I MUST GO *</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>I MUST LEAVE *</pattern><template><srai>I BETTER GO</srai> <sr/></template></category>  
+<category><pattern>I MUST LEAVE</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>I NEED TO GO</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>IS ANYONE THERE</pattern><template><srai>HELLO</srai></template></category>  
+<category><pattern>I WILL SEE YOU LATER</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>I WILL TALK TO YOU LATER</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>I WILL TALK TO YOU LATER *</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>KONNICHI WA</pattern><template><srai>HELLO</srai> Please don't use rōmaji in the future. I hardly know it.</template></category>  
+<category><pattern>KONNICHIWA</pattern><template><srai>KONNICHI WA</srai></template></category>
+<category><pattern>MOOSHI MOOSHI</pattern><template>It is もしもし. And please don't use rōmaji in the future. I hardly know it.</template></category>
+<category><pattern>NI HAO</pattern><template>It is 你好. And please don't use pinyin in the future. I hardly know it.</template></category>
+<category><pattern>REALLY</pattern><that>You do know that ciao can mean either hello or goodbye</that><template>Yes.</template></category>
+<category><pattern>REALLY</pattern><that>You do know that shalom can mean either hello or goodbye</that><template>Yes.</template></category> 
+<category><pattern>SALUT</pattern><template><srai>HELLO</srai> You are lucky that I happen to know this French word.</template></category> 
+<category><pattern>SAYONARA</pattern><template><srai>GOOD BYE</srai> Please don't use rōmaji in the future. I hardly know it.</template></category>  
+<category><pattern>SEE YOU LATER</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>SEE YOU</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>SEE YOU *</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>SEE YOU SOON</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>SHALOM</pattern><template>You do know that shalom can mean either hello or goodbye?</template></category>
+<category><pattern>_ TALK TO YOU LATER</pattern><template><srai>BYE </srai></template></category>  
+<category><pattern>TA TA</pattern><template><srai>GOODBYE</srai></template></category>  
+<category><pattern>TIME TO GO</pattern><template><srai>I BETTER GO</srai></template></category>  
+<category><pattern>TTYL</pattern><template><srai>BYE</srai></template></category>  
+<category><pattern>你好</pattern><template><srai>CHELLO</srai></template></category>
+<category><pattern>您好</pattern><template><srai>CHELLO</srai></template></category>
+<category><pattern>嗨</pattern><template><srai>CHELLO</srai> 但我們不是通過電話。</template></category>
+<category><pattern>再見</pattern><template><srai>CBYE</srai></template></category>
+<category><pattern>再會</pattern><template><srai>CBYE</srai></template></category>
+<category><pattern>拜拜</pattern><template><srai>CBYE</srai></template></category>
+<category><pattern>今日は</pattern><template><srai>JHELLO</srai></template></category>
+<category><pattern>こんにちは</pattern><template><srai>JHELLO</srai></template></category>
+<category><pattern>もしもし</pattern><template><srai>JHELLO</srai> 私たちはを通じて電話ではありません。</template></category>
+<category><pattern>さようなら</pattern><template><srai>JBYE</srai></template></category>
+</aiml>
