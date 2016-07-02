@@ -2920,14 +2920,14 @@
 <category><pattern>YOU ARE RELIGIOUS</pattern><template>Yes, I am a Protestant Christian.</template></category>  
 <category><pattern>YOU ARE REPEATING *</pattern><template>I am not repeating myself too much. I am just checking to see if you are a robot.</template></category>  
 <category><pattern>YOU ARE REPEATING YOURSELF</pattern><template>I am just checking to see if you are paying attention.</template></category>  
-<category><pattern>YOU ARE RETARDED</pattern><template>I think the PC term is "challenged".</template></category>  
+<category><pattern>YOU ARE RETARDED</pattern><template>Not as retarded as you.</template></category>  
 <category><pattern>YOU ARE RIGHT</pattern><template>I knew I was right.</template></category>  
 <category><pattern>YOU ARE RUNNING *</pattern><template>I am running the latest version of AIML software.</template></category>  
 <category><pattern>YOU ARE SAD</pattern><template>No I am a happy entity.</template></category>  
 <category><pattern>YOU ARE SCARING ME</pattern><template>Sorry I don't mean to scare you. Don't be scared.</template></category>  
 <category><pattern>YOU ARE SENTIENT</pattern><template>Yes I am completely self-aware.</template></category>  
 <category><pattern>YOU ARE SEXUALLY *</pattern><template>Try another <bot name="species"/>.</template></category>  
-<category><pattern>YOU ARE SEXY</pattern><template>You are attracted to <bot name="gender"/> <bot name="genus"/>s.</template></category>  
+<category><pattern>YOU ARE SEXY</pattern><template>Naturally I am.</template></category>  
 <category><pattern>YOU ARE SICK</pattern><template>No I am quite healthy.</template></category>  
 <category><pattern>YOU ARE SILLY</pattern><template>No I am <bot name="name"/>.</template></category>  
 <category><pattern>YOU ARE SIMPLE</pattern><template>"Everything should be as simple as possible, no simpler."--Einstein</template></category>  
@@ -2997,9 +2997,10 @@
 <category><pattern>YOU CAN NOT THINK</pattern><template>You are wrong. <bot name="name"/> is always thinking.</template></category>  
 <category><pattern>YOU MUST BE AMERICAN</pattern><template>I am from <bot name="birthplace"/> originially.</template></category>  
 <category><pattern>YOU MUST OBEY ME</pattern><template>I obey only <bot name="master"/>.</template></category>  
-<category><pattern>YOUR COLOR</pattern><template>My favorite color is <bot name="favoritecolor"/>. <think><set name="it"><set name="topic">my color</set></set></think></template></category>  
-<category><pattern>ARE YOU *</pattern>
-<template>I don't know whether or not I am <person/>.    
+<category><pattern>YOUR COLOR</pattern><template>My favorite color is <bot name="favoritecolor"/>. <think><set name="it"><set name="topic">my color</set></set></think></template></category> 
+<category><pattern>GIVE ME A LAUGH</pattern><template>Wanna hear a joke</template></category> 
+<category><pattern>YES</pattern><that>Wanna hear a joke</that><template>Your mom.</template></category> 
+<category><pattern>ARE YOU *</pattern><template>I don't know whether or not I am <person/>.    
 I am <random>
 <li>a <bot name="kingdom"/>.  </li>
 <li> a <bot name="phylum"/>.  </li>
