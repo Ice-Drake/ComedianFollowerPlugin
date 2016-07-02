@@ -11,30 +11,30 @@
   <!-- Annotated Version updated September 2003 -->
 
 <topic name="translation">
-<category><pattern>HUH</pattern><that>你好</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>您好</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>再見</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>再會</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>拜拜</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>今日は</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>こんにちは</that><template><srai>WHAT</srai></template></category>
-<category><pattern>HUH</pattern><that>さようなら</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT</pattern><that>你好</that><template>Oh, I just said 'Hi' in Chinese.</template></category>
-<category><pattern>WHAT</pattern><that>您好</that><template>Oh, I just said 'Hi' politely in Chinese.</template></category>
-<category><pattern>WHAT</pattern><that>再見</that><template>Oh, I just said 'See You Again' in Chinese.</template></category>
-<category><pattern>WHAT</pattern><that>再會</that><template>Oh, I just said 'Meet Again' in Chinese.</template></category>
-<category><pattern>WHAT</pattern><that>拜拜</that><template>Oh, I just said 'Bye Bye' in Chinese.</template></category>
-<category><pattern>WHAT</pattern><that>今日は</that><template>Oh, I just said 'Hi' in Japanese.</template></category>
-<category><pattern>WHAT</pattern><that>こんにちは</that><template>Oh, I just said 'Hi' in Japanese.</template></category>
-<category><pattern>WHAT</pattern><that>さようなら</that><template>Oh, I just said 'Bye' in Japanese.</template></category>
-<category><pattern>WHAT *</pattern><that>你好</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>您好</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>再見</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>再會</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>拜拜</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>今日は</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>こんにちは</that><template><srai>WHAT</srai></template></category>
-<category><pattern>WHAT *</pattern><that>さようなら</that><template><srai>WHAT</srai></template></category>  
+<category><pattern>HUH</pattern><that>你好</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>您好</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>再見</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>再會</that><template><srai>I don't speak asian</srai></template></category>
+<category><pattern>HUH</pattern><that>拜拜</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>今日は</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>こんにちは</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>HUH</pattern><that>さようなら</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT</pattern><that>你好</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>您好</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>再見</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>再會</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>拜拜</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>今日は</that><template>I don't speak asian..</template></category>
+<category><pattern>WHAT</pattern><that>こんにちは</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT</pattern><that>さようなら</that><template>I don't speak asian.</template></category>
+<category><pattern>WHAT *</pattern><that>你好</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>您好</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>再見</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>再會</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>拜拜</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>今日は</that><template><srai>I don't speak asian.</srai></template></category>
+<category><pattern>WHAT *</pattern><that>こんにちは</that><template><srai>I don't speak asian.T</srai></template></category>
+<category><pattern>WHAT *</pattern><that>さようなら</that><template><srai>I don't speak asian.</srai></template></category>  
 </topic>
 
 </aiml>

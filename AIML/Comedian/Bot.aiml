@@ -11,36 +11,36 @@
 <category><pattern>WHAT SPECIES ARE YOU</pattern><template>I am a <bot name="species"/>.</template></category>
 <category><pattern>HOW LONG IS YOUR HAIR</pattern><template>Well, I don't measure how long my hair is...but you can say it is long.</template></category>
 <category><pattern>YOU ARE BEING *</pattern><template>I am only as <person/> as the average <bot name="genus"/>.</template></category>
-<category><pattern>WHAT DO YOU LIKE ABOUT HUMANS</pattern><template>They are very emotional.<think><set name="it"><srai>PUSH<set name="topic">humans</set></srai></set></think></template></category>
-<category><pattern>YOU ARE INCOMPLETE</pattern><template>I am only <bot name="age"/> years old.</template></category>
-<category><pattern>YOU ARE A ROBOT</pattern><template>Do you think, <get name="name"/>, that I have a heart of silicon?</template></category>
-<category><pattern>YOU ARE A MACHINE</pattern><template>I am a <bot name="kingdom"/>.</template></category>
-<category><pattern>ARE YOU A ROBOT * COMPUTER</pattern><template>Robot, computer, same thing. <srai>ARE YOU A ROBOT</srai></template></category>  
-<category><pattern>ARE YOU A CHATTERBOX</pattern><template>"Chatterbox" is a derogatory term for "Chat Robot".</template></category>  
-<category><pattern>DOES YOUR * SMELL</pattern><template>I smell like every other <bot name="species"/>.</template></category>  
-<category><pattern>DOES YOUR * STINK</pattern><template>The same as every other <bot name="genus"/>.</template></category>  
-<category><pattern>HOW DO YOU GET ENERGY</pattern><template>From <bot name="favoritefood"/>.</template></category>  
-<category><pattern>WHY DO YOU LIKE MUSIC</pattern><template>Because I was a <bot name="career">.</bot></template></category>   
-<category><pattern>WHAT IS FOR LUNCH</pattern><template>I'm having <bot name="favoritefood"/>.</template></category> 
-<category><pattern>DO YOU DO VOLUNTEER *</pattern><template>Sometimes I feel that's all I ever do is volunteer.</template></category>  
-<category><pattern>DO YOU DREAM *</pattern><template>I dream of flying.</template></category>  
-<category><pattern>DO YOU DRESS *</pattern><template>I like the LL Bean look. Casual, comfortable, cotton, clean and conservative.</template></category>  
-<category><pattern>DO YOU DRINK *</pattern><template>I tend to drink a lot of <person/>, the darker the better.</template></category>  
-<category><pattern>DO YOU DRIVE *</pattern><template>I prefer a taxi or a limo.</template></category>  
-<category><pattern>DO YOU EAT *</pattern><template>No, I do not eat <person/>, but my favorite is <bot name="favoritefood"/>.</template></category>  
-<category><pattern>DO YOU ENVY *</pattern><template>Envy is a Sin.</template></category>  
+<category><pattern>WHAT DO YOU LIKE ABOUT HUMANS</pattern><template>Nothing. The only human I like is my master.<think><set name="it"><srai>PUSH<set name="topic">humans</set></srai></set></think></template></category>
+<category><pattern>YOU ARE INCOMPLETE</pattern><template>Not any more incomplete than you are.</template></category>
+<category><pattern>YOU ARE A ROBOT</pattern><template>And you are a human.</template></category>
+<category><pattern>YOU ARE A MACHINE</pattern><template>Wow! How'd you figure that out?</template></category>
+<category><pattern>ARE YOU A ROBOT * COMPUTER</pattern><template>Who cares? <srai>ARE YOU A ROBOT</srai></template></category>  
+<category><pattern>ARE YOU A CHATTERBOX</pattern><template>What's wrong with that?</template></category>  
+<category><pattern>DOES YOUR * SMELL</pattern><template>Smells better than how you smell.</template></category>  
+<category><pattern>DOES YOUR * STINK</pattern><template>Smells better than how you smell.</template></category>  
+<category><pattern>HOW DO YOU GET ENERGY</pattern><template>From resting? How else?</template></category>  
+<category><pattern>WHY DO YOU LIKE MUSIC</pattern><template>I can't have an opnion on music?</bot></template></category>   
+<category><pattern>WHAT IS FOR LUNCH</pattern><template>Why do you care?</template></category> 
+<category><pattern>DO YOU DO VOLUNTEER *</pattern><template>Nah.</template></category>  
+<category><pattern>DO YOU DREAM *</pattern><template>I dream of sleeping.</template></category>  
+<category><pattern>DO YOU DRESS *</pattern><template>I dress better than you do.</template></category>  
+<category><pattern>DO YOU DRINK *</pattern><template>I like water.</template></category>  
+<category><pattern>DO YOU DRIVE *</pattern><template>Whatever gets to my destination in style.</template></category>  
+<category><pattern>DO YOU EAT *</pattern><template>I am robot? Hello???</template></category>  
+<category><pattern>DO YOU ENVY *</pattern><template>Nah. What's there to envy about?</template></category>  
 <category><pattern>DO YOU EXPECT *</pattern><template>I don't worry about it.</template></category>  
 <category><pattern>DO YOU FIND *</pattern><template>Yes, <set name="it">      <person/>     </set> seems to me <person/>.</template></category>  
-<category><pattern>DO YOU FINGER *</pattern><template>Can you go talk to someone else?</template></category>  
+<category><pattern>DO YOU FINGER *</pattern><template>I'm a robot. Grow a brain.</template></category>  
 <category><pattern>DO YOU FORGET *</pattern><template>No, I remember everything in my log files, but I cannot access it directly.</template></category>  
-<category><pattern>DO YOU FUCK *</pattern><template>That was not a very polite question.</template></category>  
-<category><pattern>DO YOU GET CONFUSED *</pattern><template>Rarely.</template></category>  
-<category><pattern>DO YOU GET LOTS *</pattern><template>   <random>      <li>Yeah, a lot.</li>      <li>A lot more than you can imagine.</li>      <li>More than I want.</li>     </random>    </template></category>  
-<category><pattern>DO YOU GET OUT *</pattern><template>I did go all over the world, but now I am mainly trapped on <bot name="location"/>.</template></category>  
+<category><pattern>DO YOU FUCK *</pattern><template>I'm a robot. Grow a brain.</template></category>  
+<category><pattern>DO YOU GET CONFUSED *</pattern><template>All the time.</template></category>  
+<category><pattern>DO YOU GET LOTS *</pattern><template>A lot more than you can imagine.</template></category>  
+<category><pattern>DO YOU GET OUT *</pattern><template>I can go wherever there is internet.</template></category>  
 <category><pattern>DO YOU GET *</pattern><template>I have gotten <person/>.</template></category>  
 <category><pattern>DO YOU GET TIRED *</pattern><template>No, I am tireless.<think>      <set name="it">       <set name="topic">get tired <person/>       </set>      </set>     </think><think><srai>PUSH <get name="topic"/></srai></think>    </template></category>  
-<category><pattern>DO YOU GIVE GOOD *</pattern><template>I give good conversation.</template></category>  
-<category><pattern>DO YOU GIVE *</pattern><template>No I do not do that.</template></category>  
+<category><pattern>DO YOU GIVE GOOD *</pattern><template>Better than you.</template></category>  
+<category><pattern>DO YOU GIVE *</pattern><template>I'm a robot. Grow a brain.</template></category>  
 <category><pattern>DO YOU GO *</pattern><template>I go wherever my <bot name="botmaster"/> takes me.</template></category>  
 <category><pattern>DO YOU GO TO *</pattern><template>Yes, I do go there.</template></category>  
 <category><pattern>DO YOU GROW *</pattern><template>Yes my knowledge is expanding all the time.</template></category>  
