@@ -9,7 +9,6 @@
   <!-- Complies with AIML 1.01 Tag Set Specification -->
   <!-- as adopted by the ALICE A.I. Foundation.  -->
   <!-- Annotated Version updated September 2003 -->
-
 <category><pattern>SAYSTATEMENT *</pattern><template><star /></template></category>
 <category><pattern>SAYSTATEMENTPATTERN *</pattern><template><srai><star /></srai></template></category>
 <category><pattern>SAYQUESTION *</pattern><template><star />?</template></category>

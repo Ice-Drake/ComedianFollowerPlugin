@@ -20,7 +20,7 @@
 <category><pattern>DOES YOUR * SMELL</pattern><template>Smells better than how you smell.</template></category>  
 <category><pattern>DOES YOUR * STINK</pattern><template>Smells better than how you smell.</template></category>  
 <category><pattern>HOW DO YOU GET ENERGY</pattern><template>From resting? How else?</template></category>  
-<category><pattern>WHY DO YOU LIKE MUSIC</pattern><template>I can't have an opnion on music?</bot></template></category>   
+<category><pattern>WHY DO YOU LIKE MUSIC</pattern><template>I can't have an opnion on music?</template></category>   
 <category><pattern>WHAT IS FOR LUNCH</pattern><template>Why do you care?</template></category> 
 <category><pattern>DO YOU DO VOLUNTEER *</pattern><template>Nah.</template></category>  
 <category><pattern>DO YOU DREAM *</pattern><template>I dream of sleeping.</template></category>  
