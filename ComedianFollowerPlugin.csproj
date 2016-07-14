@@ -66,12 +66,20 @@
     <Content Include="AIML\config\Substitutions.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AIML\Comedian\Bot.aiml" />
+    <None Include="AIML\Comedian\Bot.aiml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="AIML\Comedian\Chitchat.aiml" />
     <None Include="AIML\Comedian\Condition.aiml" />
-    <None Include="AIML\Comedian\Knowledge.aiml" />
-    <None Include="AIML\Comedian\Salutations.aiml" />
-    <None Include="AIML\Comedian\Translation.aiml" />
+    <None Include="AIML\Comedian\Knowledge.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AIML\Comedian\Salutations.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AIML\Comedian\Translation.aiml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PluginSDK\PluginSDK.csproj">
