@@ -1,7 +1,7 @@
 ﻿using AIMLbot;
 using PluginSDK;
 
-namespace FollowerPlugins
+namespace ComedianFollowerPlugin
 {
     public abstract class BotState
     {

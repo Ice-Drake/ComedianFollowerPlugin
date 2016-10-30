@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Timers;
 using System.IO;
 using AIMLbot;
+using ChatModule;
 using PluginSDK;
 
-namespace FollowerPlugins
+namespace ComedianFollowerPlugin
 {
     public enum BotStatus { Available, Busy, Sleep };
 
+    [PluginAttribute(AuthorName = "Que Trac", PluginName = "Comedian", PluginVersion = "1.0")]
     public class Comedian : Bot, IFollowerPlugin
     {
         public string AuthorName { get; private set; }

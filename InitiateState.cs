@@ -1,7 +1,7 @@
 ﻿using System;
 using PluginSDK;
 
-namespace FollowerPlugins
+namespace ComedianFollowerPlugin
 {
     public class InitiateState : BotState
     {

@@ -1,7 +1,6 @@
-﻿using System;
-using PluginSDK;
+﻿using ChatModule;
 
-namespace FollowerPlugins
+namespace ComedianFollowerPlugin
 {
     public class GreetingState : BotState
     {

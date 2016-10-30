@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ComedianFollowerPlugin</RootNamespace>
     <AssemblyName>ComedianFollowerPlugin</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,7 +40,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -82,6 +82,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChatModule\ChatModule.csproj">
+      <Project>{52420c4b-5c20-4e45-b14f-14fbfe8be501}</Project>
+      <Name>ChatModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PluginSDK\PluginSDK.csproj">
       <Project>{67161f85-556e-4def-9899-6464bdc55773}</Project>
       <Name>PluginSDK</Name>
@@ -89,9 +93,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y "$(TargetPath)" "$(SolutionDir)MultiDesktop\$(OutDir)"
-xcopy /I /Y "$(ProjectDir)AIML\Comedian" "$(SolutionDir)MultiDesktop\$(OutDir)comedian"
-xcopy /Y "$(ProjectDir)AIML\config\ComedianSettings.xml" "$(SolutionDir)MultiDesktop\$(OutDir)config"</PostBuildEvent>
+    <PostBuildEvent>if exist "$(SolutionDir)MultiDesktop" (
+if not exist "$(SolutionDir)MultiDesktop\$(OutDir)AIMLbot.dll" copy "$(ProjectDir)AIMLbot.dll" "$(SolutionDir)MultiDesktop\$(OutDir)AIMLbot.dll"
+if not exist "$(SolutionDir)MultiDesktop\$(OutDir)Plugins" mkdir "$(SolutionDir)MultiDesktop\$(OutDir)Plugins"
+xcopy /Y "$(TargetPath)" "$(SolutionDir)MultiDesktop\$(OutDir)Plugins"
+xcopy /I /Y "$(ProjectDir)AIML\Comedian" "$(SolutionDir)MultiDesktop\$(OutDir)\comedian"
+if not exist "$(SolutionDir)MultiDesktop\$(OutDir)config" mkdir "$(SolutionDir)MultiDesktop\$(OutDir)config"
+xcopy /Y "$(ProjectDir)AIML\config\ComedianSettings.xml" "$(SolutionDir)MultiDesktop\$(OutDir)config")</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

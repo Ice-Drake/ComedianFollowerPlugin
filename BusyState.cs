@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using PluginSDK;
 
-namespace FollowerPlugins
+namespace ComedianFollowerPlugin
 {
     public class BusyState : BotState
     {
